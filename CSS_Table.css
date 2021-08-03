@@ -1,0 +1,18 @@
+table{
+    border: 2px solid cornflowerblue;
+}
+
+td:hover{
+    background-color:cornsilk;
+    color:whitesmoke
+}
+
+tr, th{
+    background-color:yellow;
+    color:violet
+}
+
+tr, td{
+    background-color:yellow;
+    color:red;
+}
