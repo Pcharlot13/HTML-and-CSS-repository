@@ -1,0 +1,8 @@
+ol {
+    list-style-type: lower-roman;
+    color:salmon;
+}
+ul{
+    list-style-type:lower-latin;
+    color:royalblue;
+}
