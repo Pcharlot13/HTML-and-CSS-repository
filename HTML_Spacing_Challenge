@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .font_1{
+            color:aqua;
+            text-align: center;
+        }
+    </style>
+    <head>
+        This is buy Paul's Webpage&copy;
+    </head>
+    <body>
+        <p>This is a break <br> in the paragraph</p>
+        <p>this one uses a <section class="font_1">section tag</section></p>
+        <p>The&nbsp;Tech&nbsp;Academy is a great way to use the non breakable space</p>
+    </body>
+</html>
