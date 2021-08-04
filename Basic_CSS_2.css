@@ -1,6 +1,13 @@
-p{
+.font_1{
     color:antiquewhite;
     background:royalblue;
     font-weight:bold;
     text-align:center
+}
+
+/* this is CSS text shadow */
+
+.shdow_1{
+    padding:2rem;
+    text-shadow: 10px 2px 5px #bada55;
 }
