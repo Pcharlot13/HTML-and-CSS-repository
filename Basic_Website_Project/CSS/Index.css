@@ -1,6 +1,15 @@
+.defaultText{
+    color: rgb(171, 199, 202);
+    font-family: Arial;
+}
 .tableStyle{
-    border: 1px solid darkslategray;
+    border: 5px solid rgb(12, 44, 141);
     list-style-position: center;
+}
+.tableImage{
+    width:150px;
+    height: 150px;
+    object-fit: scale-down;
 }
 .webpage{
     background-image:url(../images/Seamless_Space.png);
