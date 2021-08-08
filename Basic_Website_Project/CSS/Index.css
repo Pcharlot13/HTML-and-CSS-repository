@@ -1,6 +1,7 @@
 .tableStyle{
     border: 1px solid darkslategray;
+    list-style-position: center;
 }
 .webpage{
-    background-image: nones;
+    background-image:url(../images/Seamless_Space.png);
 }
