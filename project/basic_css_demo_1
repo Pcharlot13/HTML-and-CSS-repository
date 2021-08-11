@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML template</title>
+    </head>
+
+    <div>
+        <h1>Basic CSS demo</h1>
+    </div>
+    
+    <div class="container">
+        <div class="squares">
+            <p>Box1</p>
+        </div>
+
+        <div class="squares">
+            <p>Box2</p>
+        </div>
+
+        <div class="squares">
+            <p>Box3</p>
+        </div>
+
+        <div class="squares">
+            <p>Box4</p>
+        </div>
+    </div>
+</html>
