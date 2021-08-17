@@ -1,0 +1,187 @@
+/*=======================================
+Author:Paul Charlot
+pixel art inspiration
+=========================================*/
+
+/*=======================================
+GALLERY SECTION ANIMATION
+========================================*/
+p{
+    font-weight:300;
+    line-height:30px;
+    padding-bottom:15px;
+}
+
+.photo{
+    position:relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius:8px;
+    padding:1px;
+    border: 1px solid #021a40;
+    background-color:#051861;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7)
+}
+
+.photo-container{
+    text-align: center;
+    margin:15px auto;
+    width: 500px;
+    height: 500px;
+}
+
+.photo-container img{
+    max-width: 100%;
+    margin:15px auto;
+    width: 500px;
+    height: 500px;
+}
+.photo-overlay{
+    color:#fff;
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /* for centering txt inside .photo*/
+    align-items: center;
+    background:rgba(0,0,0,0.5)
+}
+.white-head{
+    color:#C9BDAA;
+    margin-top: 5%;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.photo-overlay{
+    opacity:0;
+    transition: opacity .1s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay p{
+    width: 100%;
+    height: 100%;
+    color:#fff;
+}
+
+.photo-overlay:hover{
+    opacity: 1;
+}
+
+.photo img{
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img{
+    transform: scale(1.1);
+}
+
+/* nav menu */
+.wrap{
+    top:0;
+    left:0;
+    height:auto;
+    width:100%;
+}
+
+.menu-container{
+    top:0;
+    left:0;
+    margin:0% auto;
+    /* top edge of the screen */
+    position:fixed;
+    width:100%;
+    background-color:#051861;
+    z-index: 100;
+}
+
+.menu{
+    font:bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.menu li{
+    color: #b3b3b3;
+    display: inline-block;
+    margin-right: -2px;
+    position:relative;
+    padding: 12px 40px;
+    border-bottom: 1px solid #9d9fa2;
+    border-radius: 1.5px;
+    background-color: #051861;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color:#5EAFDF;
+    color: #fff;
+}
+
+.menu li:hover ul{
+    display: block;
+    opacity:1;
+    /* while hovered, drop-down menu apears
+        this also avoid a block level bug */
+        visibility:visible;
+    }
+.home-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  width: 50%;
+}
+.home-text{
+    margin-top: 40px;
+    text-align: center;
+    line-height:1;
+    font-size: 50px;
+    color:floralwhite;
+}
+
+body{
+    background-image: url(../images/seamless.jpeg);
+}
+.gallery-text{
+    text-align: center;
+    font-size: 50px;
+    color:floralwhite;
+}
+.RSVP-text{
+    text-align: center;
+    font-size: 50px;
+    color:floralwhite;
+}
+.RSVP-Form{
+    text-align: center;
+    width: 50%;
+    color:floralwhite;
+}
+form{
+    margin-left: 75%; 
+    width:50%;
+    text-align: center;
+}
+footer{
+    color:floralwhite;
+}
+.RSVP-message{
+    color:floralwhite;
+    text-align:center;
+}
