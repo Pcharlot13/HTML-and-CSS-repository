@@ -4,17 +4,20 @@
         <title>
             Fighting Styles
         </title>
+        <link rel="stylesheet" href="one_page_website.css">
     </head>
     <body>
         <!--Nav-->
-        <nav>
-            <ul>
-                <li><a href="#home" id="links">Home</a></li>
-                <li><a href="#pictures" id="links">Pictures</a></li>
-                <li><a href="#videos" id="link">Videos</a></li>
-                <li><a href="#contact" id="links">Contact us</a></li>
-            </ul>
-        </nav>
+        <div class="wrap">
+            <div class="menu-container"> 
+                <ul class="menu">
+                    <a href="#home" id="link"><li>Home</li></a>
+                    <a href="#pictures" id="link"><li>pictures</li></a>
+                    <a href="#videos" id="link"><li>Videos</li></a>
+                    <a href="#contact" id="link"><li>Reservations</li></a>
+                </ul>
+            </div>
+        </div>
 
         <!--Home-->
         <div id="home">
@@ -25,35 +28,43 @@
 
         <!--Pictures-->
         <div id="pictures">
-            <div>
-                <img src="./Images/pic1.jpeg" height="300" width="300">
+            <div class="photo-container">
+                <div class ="photo1">
+                    <img src="./Images/pic1.jpeg" width="710" height="495" alt="">
+                </div>
+                <div class ="photo2">
+                    <img src="./Images/pic2.jpeg" width="710" height="495" alt="">
+                </div>
             </div>
-            <div>
-                <img src="./Images/pic2.jpeg" height="300" width="300">            </div>
         </div>
 
         <!--Videos-->
-        <div>
-            <div>
+        <div id="videos">
+            <div class="vids">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kFBEKVSKIH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <!--Contact-->
         <div>
-            <form action="" method="post">
-                <input class="RSVP" type="text" value="First Name">
-                <input class="RSVP" type="text" value="Last Name">
-                <input class="RSVP" type="text" value="E-mail">
-                <input class="RSVP" type="text" value="Phone Number">
+            <div id="contact">
                 <div class="form-spacer">
-                    <label class="terms">JOIN OUR CLUB TODAY!</label>
+                    <label class="terms"><h1>JOIN OUR CLUB TODAY!</h1></label>
                 </div>
-                <div>
-                    <input type="submit" value="Submit">
+                <div class="input">
+                    <form action="" method="post">
+                        <input class="RSVP" type="text" value="First Name">
+                        <input class="RSVP" type="text" value="Last Name">
+                        <input class="RSVP" type="text" value="E-mail">
+                        <input class="RSVP" type="text" value="Phone Number">
                 </div>
-
-            </form>
+                    <div class="subB">
+                        <input type="submit" value="Submit">
+                    </div>
+    
+                </form>
+            </div>
         </div>
+        
         <!--Footer-->
         <div>
             www.lrnallfighting.org &nbsp;|&nbsp; &copy;2021
