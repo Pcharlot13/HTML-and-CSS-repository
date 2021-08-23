@@ -82,9 +82,10 @@ form{
     margin-left: 25%; 
     width:50%;
     text-align: center;
+    background-color:#051861;
 }
 .RSVP{
-    border: 3px solid #555;
+    border: 3px solid cornflowerblue;
 }
 .subB{
   border: none;
@@ -98,4 +99,10 @@ form{
 .terms{
     text-align: center;
     color: orangered;
+}
+.input2{
+    color:cornflowerblue;
+    font-weight: bold;
+    background-color: #051861;
+    border: 2px solid;
 }
