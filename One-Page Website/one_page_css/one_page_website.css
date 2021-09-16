@@ -1,7 +1,8 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
-    background-image: url(./Images/background.webp);
+    background-image: url(../Images/background.webp);
+    margin: 0;
 }
 /* nav */
 .wrap{
@@ -17,7 +18,7 @@ body{
     /* top edge of the screen */
     position:fixed;
     width:100%;
-    background-image: url(./Images/background.webp);
+    background-image: url(../Images/background.webp);
     z-index: 100;
 }
 
@@ -52,23 +53,42 @@ body{
     color: #fff;
 }
 
-
-.photo1,.photo2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2,200px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    height: 100vh;
 }
-.photo1{
-    border: 10px solid red;
-    border-radius: 20px;
-    margin-bottom: 100px;
+.grid img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
 }
-.photo2{
-    border: 10px solid red;
-    border-radius: 20px;
-    margin-bottom: 200px;
-}
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+  }
 
 .vids{
     display:block;
