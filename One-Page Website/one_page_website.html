@@ -28,15 +28,65 @@
         </div>
 
         <!--Pictures-->
-        <div id="pictures">
-            <div class="grid">
-                <img src = "Images/pic1.jpeg">
-                <img src="Images/pic2.jpeg">
-                <img src="Images/pic3.jpeg">
-                <img src="Images/pic4.webp">
-            </div>
+        <div class="grid">
+            <img src="Images/pic1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <img src="Images/pic2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img src="Images/pic3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            <img src="Images/pic4.webp" onclick="openModal();currentSlide(4)" class="hover-shadow">
         </div>
-
+          
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="Images/pic1.jpeg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="Images/pic2.jpeg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="Images/pic3.jpeg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/pic4.webp" style="width:100%">
+              </div>
+          
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="Images/pic1.jpeg" onclick="currentSlide(1)" alt="fight" width:200 length:200>
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="Images/pic2.jpeg" onclick="currentSlide(2)" alt="more fighting" width:200 length:200>
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="Images/pic3.jpeg" onclick="currentSlide(3)" alt="even more fighting" width:200 length:200>
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="Images/pic4.webp" onclick="currentSlide(4)" alt="last fight fighting" width:200 length:200>
+              </div>
+            </div>
+          </div>
         <!--Videos-->
         <div id="videos">
             <div class="vids">
